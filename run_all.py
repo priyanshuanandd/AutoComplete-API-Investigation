@@ -64,7 +64,29 @@ def run_in_terminal(script_path):
     except Exception as e:
         print(f"Failed to launch {script_path}: {e}")
 
+def prompt_requirements():
+    """Prompt user to confirm requirements installation."""
+    while True:
+        print("\nHave you installed the dependencies from requirements.txt?")
+        print("Run 'pip3 install -r requirements.txt' if not.")
+        response = input("Press Enter to continue, or type 'no' to see instructions: ").strip().lower()
+        
+        if response == "":
+            return True
+        elif response == "no":
+            print("\nPlease install the dependencies by running:")
+            print("  pip3 install -r requirements.txt")
+            print("If 'pip3' doesn't work, try:")
+            print("  python3 -m pip install -r requirements.txt")
+            print("After installing, run this script again.")
+        else:
+            print("Invalid input. Please press Enter or type 'no'.")
+
 def main():
+    # Prompt for requirements
+    if not prompt_requirements():
+        sys.exit(1)
+    
     # Run dependency check
     if not check_dependencies():
         print("Dependency check failed. Please resolve issues and try again.")
