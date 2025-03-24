@@ -110,7 +110,7 @@ Each endpoint has a different rate limit, addressed with tailored delays:
 - **`v2`**: 50 requests/minute → 1.2 seconds/request (60/50 = 1.2s).
 - **`v3`**: 80 requests/minute → 0.75 seconds/request (60/80 = 0.75s).
 
-These delays were implemented in `autocomplete.py`, `extractv2.py`, and `extractv3.py` respectively, ensuring compliance while maximizing throughput.
+These delays were implemented in `extractv1.py`, `extractv2.py`, and `extractv3.py` respectively, ensuring compliance while maximizing throughput.
 
 
 
@@ -119,14 +119,14 @@ These delays were implemented in `autocomplete.py`, `extractv2.py`, and `extract
 ### Results
 
 - **v1**:
-  - Total API Calls: [TBD after full run]
-  - Strings Found: [TBD after full run]
+  - Total API Calls: 10820
+  - Strings Found: 18632
 - **v2**:
-  - Total API Calls: [TBD after full run]
-  - Strings Found: [TBD after full run]
+  - Total API Calls: 3106
+  - Strings Found: 13730
 - **v3**:
-  - Total API Calls: [TBD after full run]
-  - Strings Found: [TBD after full run]
+  - Total API Calls: 3231
+  - Strings Found: 12517
 
 
 ## Part 7 : Conclusion 
