@@ -68,8 +68,9 @@ I implemented a *Depth-First Search (DFS) algorithm with backtracking and optimi
 
 Below is a visual representation of the DFS traversal for the `v1` endpoint, showing how prefixes are explored:
 
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/18af377e-e1ac-44d6-a39d-808e9296d8da" alt="Graph" />
+  <img src="https://github.com/user-attachments/assets/2a782fb4-80c5-4ccd-85a5-4462aadb8ae0" alt="Graph" />
 </div>
 
 ```text
