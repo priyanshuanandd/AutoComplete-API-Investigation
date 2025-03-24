@@ -142,4 +142,3 @@ These delays were implemented in `extractv1.py`, `extractv2.py`, and `extractv3.
 ### Conclusion
 
 The DFS solution with substring jumps and backtracking efficiently extracts names from `v1` (a-z), `v2` (0-z), and `v3` (symbols). The "aak" to "aaz" traversal increments the last character systematically, ensuring all same-length prefixes are covered. Rate limiting is handled with precise delays (0.6s, 1.2s, 0.75s), and the `set` ensures efficient storage.
-```
