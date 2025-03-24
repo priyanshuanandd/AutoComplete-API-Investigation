@@ -24,15 +24,19 @@ Extract all possible names from an undocumented autocomplete API at `http://35.2
    ```bash
    pip3 install -r requirements.txt
    ```
-4. **Run the Solution:**
+4. **Run the Solution:(Offer Multi-Platform Support)**
    *Execute all the scripts in one go:*
+
    ```bash
    python3 run_all.py
-   ```
+   
+
+
    *Execute Only v1:*
    ```bash
    python3 extractv1.py #same goes for v2 and v3
    ```
+   ![Screenshot (10)](https://github.com/user-attachments/assets/a1d720f7-d560-47cb-9bd0-6802b36b53ee)
 
 
 ---
@@ -64,6 +68,9 @@ I implemented a *Depth-First Search (DFS) algorithm with backtracking and optimi
 
 Below is a visual representation of the DFS traversal for the `v1` endpoint, showing how prefixes are explored:
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/18af377e-e1ac-44d6-a39d-808e9296d8da" alt="Graph" />
+</div>
 
 ```text
 
